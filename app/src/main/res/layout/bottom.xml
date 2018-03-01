@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    style="?android:attr/buttonBarStyle"
+    android:padding="3dp">
+
+    <Button
+        android:id="@+id/btn_revert"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/blue_button"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="@string/btn_revert" />
+
+    <Button
+        android:id="@+id/btn_restart"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/blue_button"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="@string/btn_restart" />
+
+    <Button
+        android:id="@+id/btn_option"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/blue_button"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="@string/btn_option" />
+
+</LinearLayout>

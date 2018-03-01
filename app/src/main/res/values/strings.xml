@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">G2048</string>
+    <string name="app_name">2048</string>
+    <string name="btn_revert">回撤</string>
+    <string name="btn_restart">重新开始</string>
+    <string name="btn_option">设置</string>
+    <string name="tv_title">游戏设置</string>
+    <string name="btn_gamelines">4</string>
+    <string name="tv_contact">与我联系</string>
+    <string name="tv_gamelines">行列数</string>
+    <string name="tv_targetgoal">挑战分数</string>
+    <string name="btn_goal">2048</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_done">确定</string>
+    <string name="score_title">分数</string>
+    <string name="record_title">最高记录</string>
 </resources>
