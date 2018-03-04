@@ -182,6 +182,7 @@ public class GameView extends GridLayout implements View.OnTouchListener {
         removeAllViews();
         mScoreHistory = 0;
         Config.SCORE = 0;
+        MainActivity.getGameActivity().setScore(Config.SCORE, 0);
         Config.mGameLines = Config.mSp.getInt(Config.KEY_GAME_LINES, 4);
         mGameLines = Config.mGameLines;
         mGameMatrix = new GameItem[mGameLines][mGameLines];
@@ -378,8 +379,8 @@ public class GameView extends GridLayout implements View.OnTouchListener {
                                     startGame();
                                 }
                             })
+                    .setCancelable(false)
                     .create().show();
-            Config.SCORE = 0;
         } else if (result == 2) {
             // 目标达成
             resetRecord();
@@ -418,8 +419,8 @@ public class GameView extends GridLayout implements View.OnTouchListener {
                                     Toast.makeText(getContext(), "加油！看好你！", Toast.LENGTH_SHORT).show();
                                 }
                             })
+                    .setCancelable(false)
                     .create().show();
-            Config.SCORE = 0;
         }
     }
 
@@ -430,9 +431,8 @@ public class GameView extends GridLayout implements View.OnTouchListener {
             SharedPreferences.Editor editor = Config.mSp.edit();
             editor.putInt(Config.KEY_HIGH_SCORE, Config.SCORE);
             editor.apply();
-            // 通知主界面也要把新纪录写到记录栏
+            // 主界面也要把新纪录写到记录栏
             MainActivity.getGameActivity().setScore(Config.SCORE, 1);
-            Config.SCORE = 0;
         }
     }
 
