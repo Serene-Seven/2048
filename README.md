@@ -9,7 +9,7 @@
 ⑥、提供游戏首次启动时的欢迎界面。  
 遗憾，本来想实现欢迎界面的字体从上往下掉的弹动效果，奈何只知道flash实现，而安卓很早就不支持flash了。  
 附上做好的flash小动画效果：  
-![](https://github.com/Serene-Seven/2048/raw/master/Screenshots/welcome.swf)
+![](https://github.com/Serene-Seven/2048/raw/master/Screenshots/welcome.gif)
 ## 游戏截图：
 欢迎界面：  
 ![](https://github.com/Serene-Seven/2048/raw/master/Screenshots/1.png)
