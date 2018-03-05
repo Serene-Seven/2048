@@ -15,12 +15,14 @@ public class Config extends Application {
     public static int mGameGoal;
     // GameView行列数
     public static int mGameLines;
-    // Item宽高
-    public static int mItemSize;
+    // Item宽
+    public static int mItemWidth;
     // 记录分数
     public static int SCORE = 0;
     // 记录最高记录
     //public static int mGameRecod;
+    // Item高
+    public static int mItemHeight;
 
     public static String SP_HIGH_SCORE = "SP_HIGHSCORE";
     public static String KEY_HIGH_SCORE = "KEY_HighScore";
@@ -35,6 +37,7 @@ public class Config extends Application {
         mGameLines = mSp.getInt(KEY_GAME_LINES, 4);
         mGameGoal = mSp.getInt(KEY_GAME_GOAL, 2048);
         //mGameRecod = mSp.getInt(KEY_HIGH_SCORE, 0);
-        mItemSize = 0;
+        mItemWidth = 0;
+        mItemHeight = 0;
     }
 }

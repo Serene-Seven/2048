@@ -13,12 +13,12 @@
             android:id="@+id/goal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="40sp"
-            android:textColor="#fff"
             android:layout_centerInParent="true"
             android:background="@drawable/text"
-            />
+            android:gravity="center"
+            android:textSize="43sp"
+            android:textColor="#ffffffff"
+            android:text="2048" />
 
     </RelativeLayout>
 
@@ -50,7 +50,8 @@
                 android:gravity="center"
                 android:textColor="#ff000000"
                 android:textSize="12sp"
-                android:background="@drawable/score" />
+                android:background="@drawable/score"
+                android:text="11156" />
 
         </LinearLayout>
 
@@ -84,7 +85,8 @@
                 android:gravity="center"
                 android:textColor="#ff000000"
                 android:textSize="12sp"
-                android:background="@drawable/record" />
+                android:background="@drawable/record"
+                android:text="10858"/>
 
         </LinearLayout>
 

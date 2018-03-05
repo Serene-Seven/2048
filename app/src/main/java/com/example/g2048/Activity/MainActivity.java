@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.g2048.Setting.Config;
 import com.example.g2048.Component.GameView;
 import com.example.g2048.R;
+import com.example.g2048.Setting.Config;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
 
@@ -50,11 +51,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         // 初始化View
         mTvScore = (TextView) findViewById(R.id.score);
         mTvGoal = (TextView) findViewById(R.id.goal);
         mTvHighScore = (TextView) findViewById(R.id.record);
-        //mGameView = (GameView) findViewById(R.id.game_view);
         // 三个按钮以及绑定按钮事件
         mBtnRestart = (Button) findViewById(R.id.btn_restart);
         mBtnRevert = (Button) findViewById(R.id.btn_revert);

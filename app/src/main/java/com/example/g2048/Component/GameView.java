@@ -53,27 +53,27 @@ public class GameView extends GridLayout implements View.OnTouchListener {
     public GameView(Context context) {
         super(context);
         initGameMatrix();
-        initGameView(Config.mItemSize);
+        initGameView(Config.mItemWidth, Config.mItemHeight);
     }
 
     public GameView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initGameMatrix();
-        initGameView(Config.mItemSize);
+        initGameView(Config.mItemWidth, Config.mItemHeight);
     }
 
     public void startGame() {
         initGameMatrix();
-        initGameView(Config.mItemSize);
+        initGameView(Config.mItemWidth, Config.mItemHeight);
     }
 
-    private void initGameView(int cardSize) {
+    private void initGameView(int mItemWidth, int mItemHeight) {
         removeAllViews();
         GameItem card;
         for (int i = 0; i < mGameLines; i++) {
             for (int j = 0; j < mGameLines; j++) {
                 card = new GameItem(getContext(), 0);
-                addView(card, cardSize, cardSize);
+                addView(card, mItemWidth, mItemHeight);
                 // 初始化GameMatrix全部为0 空格List为所有
                 mGameMatrix[i][j] = card;
                 mBlanks.add(new Point(i, j));
@@ -152,7 +152,6 @@ public class GameView extends GridLayout implements View.OnTouchListener {
 
     /**
      * 检查添加的数是否是指定的数
-     *
      * @param num num
      * @return 添加的数
      */
@@ -203,7 +202,8 @@ public class GameView extends GridLayout implements View.OnTouchListener {
                 Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
         display.getMetrics(metrics);
-        Config.mItemSize = metrics.widthPixels / Config.mGameLines;
+        Config.mItemWidth = metrics.widthPixels / Config.mGameLines;
+        Config.mItemHeight = metrics.widthPixels / Config.mGameLines;
     }
 
     @Override
