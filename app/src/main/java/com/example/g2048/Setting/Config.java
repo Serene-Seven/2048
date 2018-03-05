@@ -1,4 +1,4 @@
-package com.example.g2048;
+package com.example.g2048.Setting;
 
 import android.app.Application;
 import android.content.SharedPreferences;

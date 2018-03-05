@@ -1,4 +1,4 @@
-package com.example.g2048;
+package com.example.g2048.Activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.g2048.Setting.Config;
+import com.example.g2048.R;
 
 /**
  * Created by Administrator on 2018/3/1.

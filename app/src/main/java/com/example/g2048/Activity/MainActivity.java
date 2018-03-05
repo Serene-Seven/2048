@@ -1,4 +1,4 @@
-package com.example.g2048;
+package com.example.g2048.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.g2048.Setting.Config;
+import com.example.g2048.Component.GameView;
+import com.example.g2048.R;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
 

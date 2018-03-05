@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timg2">
+
+    <com.example.g2048.Support.ImageViewRound
+        android:id="@+id/imageView"
+        android:layout_marginTop="40sp"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="220sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="你我的2048"
+        android:textSize="40sp"
+        android:textColor="#ffff6633" />
+
+</LinearLayout>

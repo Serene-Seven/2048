@@ -1,4 +1,4 @@
-package com.example.g2048;
+package com.example.g2048.Component;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.example.g2048.Setting.Config;
 
 /**
  * Created by Administrator on 2018/3/1.

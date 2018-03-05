@@ -1,4 +1,4 @@
-package com.example.g2048;
+package com.example.g2048.Component;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -18,6 +18,9 @@ import android.view.animation.ScaleAnimation;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.Toast;
+
+import com.example.g2048.Activity.MainActivity;
+import com.example.g2048.Setting.Config;
 
 import java.util.ArrayList;
 import java.util.List;
